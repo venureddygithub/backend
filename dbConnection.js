@@ -9,9 +9,11 @@ import mongoose from "mongoose";
       const user_details=db.collection("user-details");
       console.log("mango db connected")
 
-      return user_details;
+      return {user_details};
 
-  
+      // const user_details=db.collection("user_details"); //corrected
+
+      // return {user_details}; //corrected
     }catch(e){
       console.log(e)
   
